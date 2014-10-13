@@ -20,7 +20,6 @@ echo ""
 echo "Hide the Time Machine, Volume, User, and Bluetooth icons"
 for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
   defaults write "${domain}" dontAutoLoad -array \
-    "/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
     "/System/Library/CoreServices/Menu Extras/Volume.menu" \
     "/System/Library/CoreServices/Menu Extras/User.menu"
 done
@@ -143,8 +142,8 @@ sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutio
 ###############################################################################
 
 echo ""
-echo "Showing icons for hard drives, servers, and removable media on the desktop"
-defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
+echo "Do not show icons for hard drives, servers, and removable media on the desktop"
+defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
 
 echo ""
 echo "Showing all filename extensions in Finder by default"
@@ -167,8 +166,8 @@ echo "Disabling the warning when changing a file extension"
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
 echo ""
-echo "Use column view in all Finder windows by default"
-defaults write com.apple.finder FXPreferredViewStyle Clmv
+echo "Use list-view in all Finder windows by default"
+defaults write com.apple.finder FXPreferredViewStyle Nlsv
 
 echo ""
 echo "Avoiding the creation of .DS_Store files on network volumes"
@@ -320,9 +319,9 @@ sudo touch /Private/var/vm/sleepimage
 echo "â€¦and make sure it canâ€™t be rewritten"
 sudo chflags uchg /Private/var/vm/sleepimage
 
-echo ""
-echo "Disable the sudden motion sensor as itâ€™s not useful for SSDs"
-sudo pmset -a sms 0
+# echo ""
+# echo "Disable the sudden motion sensor as itâ€™s not useful for SSDs"
+# sudo pmset -a sms 0
 
 echo ""
 echo "Speeding up wake from sleep to 24 hours from an hour"
