@@ -80,6 +80,9 @@ homebrew() {
 
 alfred() {
   brew cask alfred link
+
+  # allow Alfred to use the ~/Dropbox/Apps folder
+  defaults write com.runningwithcrayons.Alfred-Preferences dropbox.allowappsfolder -bool TRUE
 }
 
 cleanup() {
