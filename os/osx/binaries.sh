@@ -33,7 +33,6 @@ binaries=(
   zopfli
   ffmpeg
   python
-  mongo
   sshfs
   trash
   tree
