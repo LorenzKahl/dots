@@ -6,11 +6,12 @@ set -e
 
 # Apps
 apps=(
+  onepassword
   alfred
   dropbox
+  sizeup
   google-chrome
   qlcolorcode
-  transmit
   appcleaner
   firefox
   hazel
