@@ -24,6 +24,7 @@ apps=(
   qlstephen
   quicklook-json
   sublime-text3
+  webstorm
 )
 
 # fonts
