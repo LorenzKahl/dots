@@ -6,25 +6,27 @@ set -e
 
 # Apps
 apps=(
+  dropbox
   onepassword
   alfred
-  dropbox
+  skitch1
   sizeup
   google-chrome
-  qlcolorcode
   appcleaner
   firefox
   hazel
-  qlmarkdown
   seil
   spotify
   iterm2
-  qlprettypatch
   virtualbox
+  qlcolorcode
+  qlprettypatch
+  qlmarkdown 
   qlstephen
   quicklook-json
   sublime-text3
   webstorm
+  skitch
 )
 
 # fonts
