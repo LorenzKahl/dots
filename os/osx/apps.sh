@@ -27,6 +27,7 @@ apps=(
   sublime-text3
   webstorm
   skitch
+  ksdiff
 )
 
 # fonts
