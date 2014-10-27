@@ -28,6 +28,7 @@ apps=(
   webstorm
   skitch
   ksdiff
+  mamp
 )
 
 # fonts
